@@ -1,0 +1,17 @@
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\obj\Debug\TesteFabrica.Infra.Data.csprojAssemblyReference.cache
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\obj\Debug\TesteFabrica.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\TesteFabrica.Infra.Data.dll.config
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\TesteFabrica.Infra.Data.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\TesteFabrica.Infra.Data.pdb
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\TesteFabrica.Domain.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\TesteFabrica.Domain.pdb
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\obj\Debug\TesteFabrica.Infra.Data.csproj.CopyComplete
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\obj\Debug\TesteFabrica.Infra.Data.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\obj\Debug\TesteFabrica.Infra.Data.pdb
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\AutoMapper.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\AutoMapper.pdb
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Infra.Data\bin\Debug\AutoMapper.xml

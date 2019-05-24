@@ -1,0 +1,5 @@
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Domain\bin\Debug\TesteFabrica.Domain.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Domain\bin\Debug\TesteFabrica.Domain.pdb
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Domain\obj\Debug\TesteFabrica.Domain.csproj.CoreCompileInputs.cache
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Domain\obj\Debug\TesteFabrica.Domain.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Domain\obj\Debug\TesteFabrica.Domain.pdb
