@@ -1,0 +1,9 @@
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\bin\Debug\TesteFabrica.Application.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\bin\Debug\TesteFabrica.Application.pdb
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\bin\Debug\TesteFabrica.Domain.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\bin\Debug\TesteFabrica.Domain.pdb
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\obj\Debug\MySales.Application.csprojAssemblyReference.cache
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\obj\Debug\MySales.Application.csproj.CoreCompileInputs.cache
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\obj\Debug\MySales.Application.csproj.CopyComplete
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\obj\Debug\TesteFabrica.Application.dll
+C:\Users\andre.lcardoso.PWI_ADM\source\repos\TesteFabrica\TesteFabrica.Application\obj\Debug\TesteFabrica.Application.pdb
