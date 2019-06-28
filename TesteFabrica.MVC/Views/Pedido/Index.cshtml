@@ -1,43 +1,57 @@
 ﻿@model IEnumerable<TesteFabrica.MVC.ViewModels.PedidoViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Pedido - Tela Inicial";
 }
 
-    <body background="~/Content/Images/restaurant_icons.png">
+    <body>
+        <div class="card">
+            <div class="card-body">
+                <h2 align="left" class="card-title">Pedido - Tela Inicial</h2>
+            </div>
+        </div>
+        <br />
 
-        <h2>Lista de pedidos</h2>
+        <div class="card">
+            <div class="card-body">
+                <div>
+                    <a align="right" href='@Url.Action("Create", "Pedido")'>
+                        <i class="fas fa-plus-circle fa-4x"></i>
+                    </a>
 
+                </div>
+                <br />
+                <table class="table">
+                    <tr>
+                        <th class="text-center">
+                            @Html.DisplayNameFor(model => model.DataPedido)
+                        </th>
+                        <th class="text-center">
+                            @Html.DisplayNameFor(model => model.ValorTotal)
+                        </th>
+                        <th class="text-center">
+                            Detalhes
+                        </th>
+                    </tr>
 
-        <p>
-            @Html.ActionLink("Novo pedido", "Create")
-        </p>
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.DataPedido)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.ValorTotal)
-                </th>
-                <th></th>
-            </tr>
-
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DataPedido)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ValorTotal)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Detalhes", "Details", new { id = item.PedidoId }) |
-                    </td>
-                </tr>
-            }
-
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td align="center">
+                                @Html.DisplayFor(modelItem => item.DataPedido)
+                            </td>
+                            <td align="center">
+                                @Html.DisplayFor(modelItem => item.ValorTotal)
+                            </td>
+                            <td align="center">
+                                <a class='btn btn-primary' href='@Url.Action("Details", "Pedido", new { id = item.PedidoId })'>
+                                    <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+            </div>
+        </div>
         </table>
 
     </body>

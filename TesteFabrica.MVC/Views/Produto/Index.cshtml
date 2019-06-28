@@ -1,55 +1,85 @@
 ﻿@model IEnumerable<TesteFabrica.MVC.ViewModels.ProdutoViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Produto - Tela Inicial";
 }
+    <body>
+        <div class="card">
+            <div class="card-body">
+                <h2 align="left" class="card-title">Produto - Tela Inicial</h2>
+            </div>
+        </div>
+       <br />
+    
+        <div class="card">
+            <div class="card-body">
 
-    <body background="~/Content/Images/restaurant_icons.png">
+                <div>
+                    <a align="right" href='@Url.Action("Create", "Produto")'>
+                        <i class="fas fa-plus-circle fa-4x"></i>
+                    </a>
 
-        <h2>Lista de produtos</h2>
+                </div>
+                <br />
+                <table class="table">
+                    <tr>
+                        <th class="text-center">
+                            @Html.DisplayNameFor(model => model.Nome)
+                        </th>
+                        <th class="text-center">
+                            @Html.DisplayNameFor(model => model.Descricao)
+                        </th>
+                        <th class="text-center">
+                            @Html.DisplayNameFor(model => model.Preco)
+                        </th>
+                        <th class="text-center">
+                            @Html.DisplayNameFor(model => model.IsActive)
+                        </th>
+                        <th class="text-center">
+                            Editar
+                        </th>
+                        <th class="text-center">
+                            Detalhes
+                        </th>
+                        <th class="text-center">
+                            Excluir
+                        </th>
+                    </tr>
 
-        <p>
-            @Html.ActionLink("Cadastrar produto", "Create")
-        </p>
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nome)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Descricao)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Preco)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.IsActive)
-                </th>
-                <th></th>
-            </tr>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td align="center">
+                                @Html.DisplayFor(modelItem => item.Nome)
+                            </td>
+                            <td align="center">
+                                @Html.DisplayFor(modelItem => item.Descricao)
+                            </td>
+                            <td align="center">
+                                @Html.DisplayFor(modelItem => item.Preco)
+                            </td>
+                            <td align="center">
+                                @Html.DisplayFor(modelItem => item.IsActive)
+                            </td>
+                            <td align="center">
+                                <a class='btn btn-primary' href='@Url.Action("Edit", "Produto", new { id = item.ProdutoId })'>
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a class='btn btn-primary' href='@Url.Action("Details", "Produto", new { id = item.ProdutoId })'>
+                                    <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a class='btn btn-primary' href='@Url.Action("Delete", "Produto", new { id = item.ProdutoId })'>
+                                    <i class="fas fa-trash" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
 
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Descricao)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Preco)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.IsActive)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Editar", "Edit", new { id = item.ProdutoId }) |
-                        @Html.ActionLink("Detalhes", "Details", new { id = item.ProdutoId }) |
-                        @Html.ActionLink("Deletar", "Delete", new { id = item.ProdutoId })
-                    </td>
-                </tr>
-            }
-
-        </table>
+                </table>
+            </div>
+        </div>
     </body>

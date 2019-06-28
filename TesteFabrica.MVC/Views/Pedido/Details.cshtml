@@ -5,30 +5,34 @@
 }
 
     <body background="~/Content/Images/restaurant_icons.png">
-        <h2>Detalhes do pedido</h2>
+        <div class="card">
+            <div class="card-body">
+                <h2 align="left" class="card-title">Detalhes do pedido</h2>
 
-        <div>
-            <hr />
-            <dl class="dl-horizontal">
-                <dt>
-                    @Html.DisplayNameFor(model => model.DataPedido)
-                </dt>
+                <div>
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DataPedido)
+                        </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.DataPedido)
-                </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.DataPedido)
+                        </dd>
 
-                <dt>
-                    @Html.DisplayNameFor(model => model.ValorTotal)
-                </dt>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.ValorTotal)
+                        </dt>
 
-                <dd>
-                    @Html.DisplayFor(model => model.ValorTotal)
-                </dd>
+                        <dd>
+                            @Html.DisplayFor(model => model.ValorTotal)
+                        </dd>
 
-            </dl>
+                    </dl>
+                </div>
+                <p>
+                    @Html.ActionLink("Voltar para lista de pedidos", "Index")
+                </p>
+            </div>
         </div>
-        <p>
-            @Html.ActionLink("Voltar para lista de pedidos", "Index")
-        </p>
     </body>
