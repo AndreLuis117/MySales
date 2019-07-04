@@ -9,7 +9,7 @@
 
         <div class="card">
             <div class="card-body">
-                <h2 align="left" class="card-title">Produtos</h2>
+                <h2 align="left" class="card-title">Novo pedido</h2>
 
 
                 @using (Html.BeginForm())
@@ -21,76 +21,77 @@
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
 
-                        <div class="form-group">
+                        <div class="form-row">
                             @{ Html.EnableClientValidation(false); }
-                            @Html.LabelFor(model => model.ValorTotal, htmlAttributes: new { @class = "control-label col-md-2" })
+                            @Html.LabelFor(model => model.ValorTotal, htmlAttributes: new { @class = "control-label col-md-1" })
 
                             <div class="control-label col-md-1">
                                 @Html.DisplayTextFor(model => model.ValorTotal)
                             </div>
                         </div>
+                        <br/>
 
-                        <div class="form-group">
-                            <div class="form-actions no-color">
+                        <div class="form-row" align="center">
+                            <div align="center">
+                                <a align="left " class="btn btn-primary" href="@Url.Action("Create", "ItensPedido")">
+                                    Adicionar item no pedido
+                                </a>
+                                <a align="center" class="btn btn-danger" href="@Url.Action("CancelarPed", "Pedido")">
+                                    Cancelar pedido
+                                </a>
                                 <button type="submit" class="btn btn-success">
                                     Finalizar pedido
                                 </button>
                             </div>
                         </div>
-
-                        <div class="form-group" align="center">
-                            <div align="center">
-                                <a align="left " class="btn btn-primary" href="@Url.Action("Create", "ItensPedido")">
-                                    Adicionar item no pedido
-                                </a>
-                                <a align="center" class="btn btn-primary" href="@Url.Action("CancelarPed", "Pedido")">
-                                    Cancelar pedido
-                                </a>
-                            </div>
-                        </div>
                     </div>
+                    <br/>
                 }
 
                 <table class="table">
                     <tr>
-                        <th>
+                        <th class="text-center">
                             ID Produto
                         </th>
-                        <th>
+                        <th class="text-center">
                             Nome
                         </th>
-                        <th>
+                        <th class="text-center">
                             Preço Unitário
                         </th>
-                        <th>
+                        <th class="text-center">
                             Quantidade
                         </th>
-                        <th>
+                        <th class="text-center">
                             SubTotal
                         </th>
-                        <th></th>
+                        <th class="text-center">
+                            Remover
+                        </th>
                     </tr>
 
                     @foreach (var item in Model.ItensPedidos)
                     {
                         <tr>
-                            <td>
+                            <td align="center">
                                 @Html.DisplayFor(modelItem => item.ProdutoId)
                             </td>
-                            <td>
+                            <td align="center">
                                 @Html.DisplayFor(modelItem => item.Produto.Nome)
                             </td>
-                            <td>
+                            <td align="center">
                                 @Html.DisplayFor(modelItem => item.Produto.Preco)
                             </td>
-                            <td>
+                            <td align="center">
                                 @Html.DisplayFor(modelItem => item.Qtde)
                             </td>
-                            <td>
+                            <td align="center">
                                 @Html.DisplayFor(modelItem => item.SubTotal)
                             </td>
-                            <td>
-                                @Html.ActionLink("Remover item", "RemoverItem", new { id = item.ProdutoId })
+                            <td align="center">
+                                <a class='btn btn-danger' href='@Url.Action("RemoverItem", "Pedido", new { id = item.ProdutoId })'>
+                                    <i class="fas fa-trash" aria-hidden="true"></i>
+                                </a>
                             </td>
                         </tr>
                     }

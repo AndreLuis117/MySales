@@ -50,24 +50,41 @@
                         @Html.AntiForgeryToken()
 
                         <div class="form-actions no-color">
-                            <button type="submit" class="btn btn-danger">Sim, tenho certeza!
+                            <button id="deleteButton" type="submit" class="btn btn-danger" onclick="deleteError">
+                                Sim, tenho certeza!
                             </button>
-                            @if (ViewBag.Erro != null)
+                            @*@if (ViewBag.Erro != null)
                             {
+                                <div class="alert alert-danger" role="alert">
+                                    @Html.Raw(@ViewBag.Erro)
+                                </div>
+
                                 <script type="text/javascript" charset="utf-8">
-                    window.onload = function () {
-                        alert('@Html.Raw(@ViewBag.Erro)')
-                    };
+                            window.onload = function () {
+                                alert('@Html.Raw(@ViewBag.Erro)')
+                            };
                                 </script>
-                            }
-                            
+                            }*@
+
                         </div>
                     }
                     <br />
-                <p>
-                    @Html.ActionLink("Voltar para tela de pedidos", "Index")
-                </p>
+                    <p>
+                        @Html.ActionLink("Voltar para tela de pedidos", "Index")
+                    </p>
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript" charset="utf-8">
+
+            function deleteError() {
+                $(document).ready(function () {
+                                  bootbox.alert("Oláaaa");
+                   
+                     });
+            };
+            
+                                
+        </script>
     </body>
